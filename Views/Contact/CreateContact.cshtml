@@ -1,1 +1,29 @@
-﻿<p>Ceci est la page pour ajouter un contact</p>
+﻿@model Contact
+
+<h1 class="text-center my-4">Ajouter un contact</h1>
+<div class="container">
+	<div class="row">
+		<div class="col-md-6 offset-md-3">
+			<form asp-action="CreateContact" method="post">
+				<div class="form-group">
+					<label asp-for="Name">Nom</label>
+					<input asp-for="Name" class="form-control" />
+					<span asp-validation-for="Name" class="text-danger"></span>
+				</div>
+				<div class="form-group">
+					<label asp-for="FirstName">Prénom</label>
+					<input asp-for="FirstName" class="form-control" />
+					<span asp-validation-for="FirstName" class="text-danger"></span>
+				</div>
+				<div class="form-group">
+					<label asp-for="DetailContact.Email">Email</label>
+					<input asp-for="DetailContact.Email" class="form-control" />
+					<span asp-validation-for="DetailContact.Email" class="text-danger"></span>
+				</div>
+				<div class="btn btn-primary mt-3">
+					<button type="submit" class="btn btn-primary">Ajouter</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

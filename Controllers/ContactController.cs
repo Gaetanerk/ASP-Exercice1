@@ -46,8 +46,18 @@ namespace Exercice_1.Controllers
                         FirstName = "Eric",
                         DetailContact = new DetailContact
                         {
-                            Id = 1,
+                            Id = 2,
                             Email = "eric.gansa@gmail.com"
+                        }
+                    },
+                    new Contact
+                    {
+                        Name = "Tancrez",
+                        FirstName = "Camille",
+                        DetailContact = new DetailContact
+                        {
+                            Id = 3,
+                            Email = "camille.tancrez@gmail.com"
                         }
                     },
                 };
