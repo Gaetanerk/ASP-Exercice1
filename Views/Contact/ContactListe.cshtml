@@ -1,5 +1,6 @@
 ﻿@model List<Contact>
-<h1 class="text-center my-4">@ViewData["contactListe"]</h1>
+<h1 class="text-center my-4">@ViewBag.ContactListe</h1>
+<h2 class="text-center my-4">@ViewData["emails"]</h2>
 <div class="container">
     <div class="row">
         @foreach (var contact in Model)

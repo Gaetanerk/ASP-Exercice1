@@ -27,6 +27,7 @@ namespace Exercice_1.Controllers
         // GET: Contact/Liste
         public IActionResult ContactListe()
         {
+            ViewBag.ContactListe = "Liste des contacts";
             var contactListe = new List<Contact>
                 {
                     new Contact
@@ -50,7 +51,7 @@ namespace Exercice_1.Controllers
                         }
                     },
                 };
-            ViewData["contactListe"] = "Liste des contacts";
+            ViewData["emails"] = "avec leurs emails";
             return View(contactListe);
         }
     }
